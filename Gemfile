@@ -13,6 +13,9 @@ group :development, :test do
   gem "sqlite3", "~> 1.3.0", :require => "sqlite3"
 end
 
+group :development do
+  gem 'taps', :require => false # has an sqlite dependency, which heroku hates
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
